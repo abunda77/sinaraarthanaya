@@ -7,136 +7,7 @@ const WHATSAPP_BASE =
   "https://wa.me/628133308688?text=Halo%20KOPERASI%20SINARA%20ARTHA%20NAYA%2C%20saya%20ingin%20bertanya%20tentang%20produk%20simpanan.";
 
 /* ----------------------------------------------------------
-   INLINE PARTIALS (fallback jika fetch gagal, e.g. file://)
-   ---------------------------------------------------------- */
-const HEADER_HTML = `
-<header class="site-header">
-  <div class="container">
-    <div class="nav-shell">
-      <a class="brand" href="index.html" aria-label="Beranda KOPERASI SINARA ARTHA NAYA">
-        <img class="brand-mark" src="assets/logo/logo.png" alt="Logo SINARA ARTHA NAYA">
-        <span class="brand-copy">
-          <span class="brand-name">SINARA ARTHA NAYA</span>
-          <span class="brand-legal">Koperasi simpanan untuk kebutuhan finansial terencana</span>
-        </span>
-      </a>
-      <nav class="nav-menu" aria-label="Navigasi utama">
-        <a class="nav-link" data-page-link="home" href="index.html">Home</a>
-        <a class="nav-link" data-page-link="about" href="about.html">About</a>
-        <a class="nav-link" data-page-link="product" href="product.html">Product</a>
-        <a class="nav-link" data-page-link="contact" href="contact.html">Contact Us</a>
-        <a class="nav-link" data-page-link="terms" href="terms.html">Terms</a>
-        <a class="nav-link" data-page-link="privacy" href="privacy.html">Privacy</a>
-      </nav>
-      <div class="nav-actions">
-        <a class="btn btn-dark" data-default-whatsapp href="#">Hubungi Kami</a>
-        <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-label="Buka menu navigasi">
-          <span class="menu-toggle-bar"></span>
-          <span class="menu-toggle-bar"></span>
-          <span class="menu-toggle-bar"></span>
-        </button>
-      </div>
-    </div>
-    <div class="mobile-panel" data-mobile-panel>
-      <div class="mobile-panel-inner">
-        <nav class="mobile-nav" aria-label="Navigasi mobile">
-          <a class="nav-link" data-page-link="home" href="index.html">Home</a>
-          <a class="nav-link" data-page-link="about" href="about.html">About</a>
-          <a class="nav-link" data-page-link="product" href="product.html">Product</a>
-          <a class="nav-link" data-page-link="contact" href="contact.html">Contact Us</a>
-          <a class="nav-link" data-page-link="terms" href="terms.html">Terms</a>
-          <a class="nav-link" data-page-link="privacy" href="privacy.html">Privacy</a>
-          <a class="btn btn-dark mobile-cta" data-default-whatsapp href="#">Hubungi via WhatsApp</a>
-        </nav>
-      </div>
-    </div>
-  </div>
-</header>`;
-
-const FOOTER_HTML = `
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-brand">
-          <img class="brand-mark" src="assets/logo/logo.png" alt="Logo SINARA ARTHA NAYA">
-          <div>
-            <div class="brand-name" style="color:#facc15;">SINARA ARTHA NAYA</div>
-            <div class="brand-legal" style="color:rgba(255,255,255,0.72);">Company profile koperasi simpanan</div>
-          </div>
-        </div>
-        <p>KOPERASI SINARA ARTHA NAYA hadir sebagai mitra layanan simpanan yang aman, jelas, dan mudah dihubungi.</p>
-      </div>
-      <div>
-        <h3 class="footer-title">Navigasi</h3>
-        <div class="footer-nav">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="product.html">Product</a>
-        </div>
-      </div>
-      <div>
-        <h3 class="footer-title">Informasi</h3>
-        <div class="footer-nav">
-          <a href="contact.html">Contact Us</a>
-          <a href="terms.html">Terms</a>
-          <a href="privacy.html">Privacy</a>
-        </div>
-      </div>
-      <div>
-        <h3 class="footer-title">Kontak</h3>
-        <div class="footer-contact">
-          <span>Jl. Komplek ruko Sesetan Agung No.16 S, Sesetan, Denpasar Selatan, Kota Denpasar, Bali 80223</span>
-          <a href="https://wa.me/628133308688">0813-3308-688</a>
-          <a href="mailto:cs@sinaraarthanaya.com">cs@sinaraarthanaya.com</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 KOPERASI SINARA ARTHA NAYA. All rights reserved.</span>
-      <span>Denpasar, Bali</span>
-    </div>
-  </div>
-</footer>`;
-
-/* ----------------------------------------------------------
-   1. PARTIALS LOADER
-   Fetch partials/header.html dan partials/footer.html.
-   Jika fetch gagal (file:// protocol), gunakan fallback
-   inline HTML agar tetap berfungsi di semua environment.
-   ---------------------------------------------------------- */
-function injectHTML(placeholder, html) {
-  const temp = document.createElement("div");
-  temp.innerHTML = html.trim();
-  placeholder.replaceWith(...temp.childNodes);
-}
-
-async function loadPartials() {
-  const headerPlaceholder = document.getElementById("site-header-placeholder");
-  const footerPlaceholder = document.getElementById("site-footer-placeholder");
-
-  const loadPartial = async (placeholder, url, fallbackHtml) => {
-    if (!placeholder) return;
-    try {
-      const response = await fetch(url);
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      const html = await response.text();
-      injectHTML(placeholder, html);
-    } catch {
-      // Fallback: gunakan inline HTML (e.g. file:// protocol)
-      injectHTML(placeholder, fallbackHtml);
-    }
-  };
-
-  await Promise.all([
-    loadPartial(headerPlaceholder, "partials/header.html", HEADER_HTML),
-    loadPartial(footerPlaceholder, "partials/footer.html", FOOTER_HTML),
-  ]);
-}
-
-
-/* ----------------------------------------------------------
-   2. HEADER — scroll shadow & mobile menu
+   1. HEADER — scroll shadow & mobile menu
    ---------------------------------------------------------- */
 function setupHeader() {
   const header = document.querySelector(".site-header");
@@ -273,11 +144,9 @@ function setupSmoothAnchors() {
 }
 
 /* ----------------------------------------------------------
-   INIT — muat partials dulu, lalu jalankan semua setup
+   INIT — jalankan semua setup
    ---------------------------------------------------------- */
-document.addEventListener("DOMContentLoaded", async () => {
-  await loadPartials();      // tunggu header & footer ter-inject
-
+document.addEventListener("DOMContentLoaded", () => {
   setupHeader();
   setupActiveNav();
   setupWhatsappLinks();
