@@ -13,9 +13,9 @@
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Geist:wght@300..700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Geist:wght@300..700&display=swap" rel="stylesheet">
   </noscript>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -28,7 +28,7 @@
       <div class="container">
         <div class="nav-shell">
           <a class="brand" href="index.html" aria-label="Beranda KOPERASI SINARA ARTHA NAYA">
-            <img class="brand-mark" src="assets/logo/logo.png" alt="Logo SINARA ARTHA NAYA">
+            <img class="brand-mark" src="assets/logo/logo.png" alt="Logo SINARA ARTHA NAYA" width="46" height="46">
             <span class="brand-copy">
               <span class="brand-name">SINARA ARTHA NAYA</span>
               <span class="brand-legal">Koperasi simpanan untuk kebutuhan finansial terencana</span>
@@ -43,7 +43,7 @@
             <a class="nav-link" data-page-link="privacy" href="privacy.html">Privacy</a>
           </nav>
           <div class="nav-actions">
-            <a class="btn btn-dark" data-default-whatsapp href="#">Hubungi Kami</a>
+            <a class="btn btn-gold nav-cta" data-default-whatsapp href="#">Hubungi Kami</a>
             <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-label="Buka menu navigasi">
               <span class="menu-toggle-bar"></span>
               <span class="menu-toggle-bar"></span>
@@ -60,7 +60,7 @@
               <a class="nav-link" data-page-link="contact" href="contact.html">Contact Us</a>
               <a class="nav-link" data-page-link="terms" href="terms.html">Terms</a>
               <a class="nav-link" data-page-link="privacy" href="privacy.html">Privacy</a>
-              <a class="btn btn-dark mobile-cta" data-default-whatsapp href="#">Hubungi via WhatsApp</a>
+              <a class="btn btn-gold mobile-cta" data-default-whatsapp href="#">Hubungi via WhatsApp</a>
             </nav>
           </div>
         </div>
@@ -69,223 +69,153 @@
 
     <main id="main-content">
       <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <span class="eyebrow">Koperasi Simpanan Profesional</span>
-            <h1>Solusi Simpanan Aman dan Menguntungkan Bersama SINARA ARTHA NAYA</h1>
-            <p>KOPERASI SINARA ARTHA NAYA hadir untuk membantu Anda mengelola simpanan dengan aman, terencana, dan
-              terpercaya melalui produk simpanan reguler, berjangka, dan deposito.</p>
-            <div class="hero-badges" aria-label="Keunggulan utama">
-              <span class="hero-badge">Aman dan terarah</span>
-              <span class="hero-badge">Produk fleksibel</span>
-              <span class="hero-badge">Komunikasi cepat</span>
-            </div>
-            <div class="btn-row">
-              <a class="btn btn-primary" data-default-whatsapp href="#">Hubungi via WhatsApp</a>
-              <a class="btn btn-outline" href="#produk-kami">Lihat Produk Simpanan</a>
-            </div>
+        <div class="container">
+          <div class="hero-statement">
+            <span class="kicker">Koperasi Simpanan Profesional</span>
+            <h1 class="display-lead">Simpanan yang aman, terencana, dan menguntungkan.</h1>
+            <p class="lede" style="margin-top:var(--space-lg);max-width:60ch;">KOPERASI SINARA ARTHA NAYA hadir untuk
+              membantu Anda mengelola simpanan dengan aman, terencana, dan terpercaya melalui produk simpanan reguler,
+              berjangka, dan deposito.</p>
           </div>
-
-          <div class="hero-visual">
-            <div class="hero-panel">
-              <div class="hero-panel-inner">
-                <div class="hero-card">
-                  <strong>Produk unggulan koperasi</strong>
-                  <p>Setiap anggota bisa memilih produk simpanan sesuai kebutuhan dan prioritas keuangan.</p>
-                </div>
-                <div class="hero-product-stack" aria-label="Ringkasan produk">
-                  <div class="hero-product">
-                    <span class="hero-product-label">Regular</span>
-                    <div>
-                      <strong class="hero-product-name">Simpanan Hallo Sinaran</strong>
-                      <p>Untuk kebutuhan transaksi dan perencanaan dana harian yang fleksibel.</p>
-                    </div>
-                  </div>
-                  <div class="hero-product">
-                    <span class="hero-product-label">Berjangka</span>
-                    <div>
-                      <strong class="hero-product-name">Simpanan Super Sinaran</strong>
-                      <p>Untuk target keuangan dengan periode penyimpanan yang lebih terencana.</p>
-                    </div>
-                  </div>
-                  <div class="hero-product">
-                    <span class="hero-product-label">Deposito</span>
-                    <div>
-                      <strong class="hero-product-name">Simpanan VIP Sinaran</strong>
-                      <p>Untuk dana prioritas yang ingin dikelola secara aman dan eksklusif.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="hero-stats">
-                  <div class="hero-stat">
-                    <strong>Produk jelas</strong>
-                    <span>Regular, berjangka, dan deposito</span>
-                  </div>
-                  <div class="hero-stat">
-                    <strong>Layanan cepat</strong>
-                    <span>WhatsApp dan email siap dihubungi</span>
-                  </div>
-                  <div class="hero-stat">
-                    <strong>Profil resmi</strong>
-                    <span>Company profile ringan dan mudah dipahami</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <ul class="hero-tags" aria-label="Keunggulan utama">
+            <li>Aman dan terarah</li>
+            <li>Produk fleksibel</li>
+            <li>Komunikasi cepat</li>
+          </ul>
+          <div class="btn-row hero-actions">
+            <a class="btn btn-gold" data-default-whatsapp href="#">Hubungi via WhatsApp</a>
+            <a class="btn btn-ghost" href="#produk-kami">Lihat Produk Simpanan</a>
           </div>
         </div>
       </section>
 
-      <section class="section">
+      <section class="seg" id="produk-kami">
         <div class="container">
-          <div class="section-header">
-            <span class="eyebrow">Keunggulan Utama</span>
-            <h2>Mengapa Memilih SINARA ARTHA NAYA?</h2>
-            <p>Pendekatan kami menekankan rasa aman, kejelasan produk, dan komunikasi yang nyaman untuk kebutuhan
-              simpanan anggota.</p>
+          <div class="seg-head">
+            <span class="kicker">Produk Simpanan</span>
+            <h2 class="display-lead--s" style="font-size:var(--text-3xl);">Tiga pilihan untuk kebutuhan yang berbeda</h2>
+            <p class="lede" style="margin-top:var(--space-md);">Dari simpanan rutin sampai dana prioritas, setiap produk
+              dirancang agar mudah dipahami.</p>
           </div>
-          <div class="grid-4">
-            <article class="card benefit-card">
-              <div class="card-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M12 3 5 6v6c0 4.4 2.9 8.5 7 9 4.1-.5 7-4.6 7-9V6l-7-3Z" stroke="currentColor"
-                    stroke-width="1.8" />
-                </svg>
-              </div>
-              <h3>Simpanan Aman</h3>
-              <p>Pengelolaan simpanan diarahkan agar nyaman, teratur, dan mudah dipahami anggota.</p>
-            </article>
-            <article class="card benefit-card">
-              <div class="card-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M7 12h10M7 8h10M7 16h6" stroke="currentColor" stroke-width="1.8" />
-                  <path d="M4 5h16v14H4z" stroke="currentColor" stroke-width="1.8" />
-                </svg>
-              </div>
-              <h3>Pelayanan Ramah</h3>
-              <p>Tim siap membantu menjawab pertanyaan produk dengan komunikasi yang jelas dan responsif.</p>
-            </article>
-            <article class="card benefit-card">
-              <div class="card-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M4 7h16M7 4v6M17 4v6M6 20l12-12" stroke="currentColor" stroke-width="1.8" />
-                </svg>
-              </div>
-              <h3>Produk Fleksibel</h3>
-              <p>Pilihan produk tersedia untuk kebutuhan harian, target masa depan, hingga dana prioritas.</p>
-            </article>
-            <article class="card benefit-card">
-              <div class="card-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M12 5 4 9l8 4 8-4-8-4Zm0 8-8-4v6l8 4 8-4V9l-8 4Z" stroke="currentColor" stroke-width="1.8" />
-                </svg>
-              </div>
-              <h3>Koperasi Terpercaya</h3>
-              <p>Website dan struktur informasi dirancang resmi untuk membantu membangun kepercayaan pengunjung.</p>
-            </article>
-          </div>
-        </div>
-      </section>
 
-      <section class="section section-muted" id="produk-kami">
-        <div class="container">
-          <div class="section-header">
-            <span class="eyebrow">Produk Simpanan</span>
-            <h2>Produk Simpanan Kami</h2>
-            <p>Tiga pilihan utama ini disusun untuk kebutuhan yang berbeda, dari simpanan rutin sampai dana prioritas.
-            </p>
-          </div>
-          <div class="grid-3">
-            <article class="card product-card">
-              <div class="product-card-top">
-                <div>
-                  <span class="product-pill">Regular</span>
-                  <h3 style="margin-top:12px;">Simpanan Hallo Sinaran</h3>
-                </div>
-              </div>
+          <article class="index-row">
+            <span class="index-num">01</span>
+            <div class="index-head">
+              <span class="index-kicker">Simpanan Regular</span>
+              <h3 class="index-title">Simpanan Hallo Sinaran</h3>
+            </div>
+            <div class="index-copy">
               <p>Simpanan reguler untuk kebutuhan transaksi dan perencanaan keuangan harian.</p>
-              <ul class="highlight-list">
+              <ul class="index-list">
                 <li>Cocok untuk tabungan harian</li>
                 <li>Fleksibel dan mudah dipahami</li>
               </ul>
-              <a class="btn btn-outline"
+              <a class="cta-link"
                 href="https://wa.me/628133308688?text=Halo%20KOPERASI%20SINARA%20ARTHA%20NAYA%2C%20saya%20ingin%20bertanya%20tentang%20Simpanan%20Hallo%20Sinaran.">Tanya
                 Produk</a>
-            </article>
-            <article class="card product-card">
-              <div class="product-card-top">
-                <div>
-                  <span class="product-pill">Berjangka</span>
-                  <h3 style="margin-top:12px;">Simpanan Super Sinaran</h3>
-                </div>
-              </div>
+            </div>
+          </article>
+
+          <article class="index-row">
+            <span class="index-num">02</span>
+            <div class="index-head">
+              <span class="index-kicker">Simpanan Berjangka</span>
+              <h3 class="index-title">Simpanan Super Sinaran</h3>
+            </div>
+            <div class="index-copy">
               <p>Simpanan berjangka dengan perencanaan waktu tertentu dan potensi hasil lebih optimal.</p>
-              <ul class="highlight-list">
+              <ul class="index-list">
                 <li>Cocok untuk target keuangan</li>
                 <li>Lebih terjadwal untuk masa depan</li>
               </ul>
-              <a class="btn btn-outline"
+              <a class="cta-link"
                 href="https://wa.me/628133308688?text=Halo%20KOPERASI%20SINARA%20ARTHA%20NAYA%2C%20saya%20ingin%20bertanya%20tentang%20Simpanan%20Super%20Sinaran.">Tanya
                 Produk</a>
-            </article>
-            <article class="card product-card">
-              <div class="product-card-top">
-                <div>
-                  <span class="product-pill">Deposito</span>
-                  <h3 style="margin-top:12px;">Simpanan VIP Sinaran</h3>
-                </div>
-              </div>
+            </div>
+          </article>
+
+          <article class="index-row">
+            <span class="index-num">03</span>
+            <div class="index-head">
+              <span class="index-kicker">Deposito</span>
+              <h3 class="index-title">Simpanan VIP Sinaran</h3>
+            </div>
+            <div class="index-copy">
               <p>Produk deposito untuk Anda yang ingin menyimpan dana dengan lebih eksklusif dan terencana.</p>
-              <ul class="highlight-list">
+              <ul class="index-list">
                 <li>Sesuai untuk dana prioritas</li>
                 <li>Nuansa layanan lebih eksklusif</li>
               </ul>
-              <a class="btn btn-outline"
+              <a class="cta-link"
                 href="https://wa.me/628133308688?text=Halo%20KOPERASI%20SINARA%20ARTHA%20NAYA%2C%20saya%20ingin%20bertanya%20tentang%20Simpanan%20VIP%20Sinaran.">Tanya
                 Produk</a>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container split-band">
-          <div class="media-panel">
-            <img src="assets/images/ruang_kantor_kerja.webp" alt="Ruang kantor KOPERASI SINARA ARTHA NAYA"
-              loading="lazy">
-          </div>
-          <div class="about-panel">
-            <span class="eyebrow">Tentang Kami</span>
-            <h2>Tentang KOPERASI SINARA ARTHA NAYA</h2>
-            <p>SINARA ARTHA NAYA adalah koperasi yang berkomitmen memberikan layanan simpanan yang aman, mudah dipahami,
-              dan berorientasi pada kesejahteraan anggota.</p>
-            <div class="feature-list" style="margin:24px 0 28px;">
-              <div class="feature-item">
-                <strong class="text-strong">Struktur informasi resmi</strong>
-                <p>Website dirancang untuk memperjelas produk, profil, dan kanal komunikasi.</p>
-              </div>
-              <div class="feature-item">
-                <strong class="text-strong">Siap dikembangkan</strong>
-                <p>Area logo, foto, dan visual utama masih memakai placeholder agar mudah diganti aset resmi.</p>
-              </div>
             </div>
-            <a class="btn btn-dark" href="about.html">Pelajari Lebih Lanjut</a>
-          </div>
+          </article>
         </div>
       </section>
 
-      <section class="section">
+      <section class="seg seg--tint">
         <div class="container">
-          <div class="cta-band">
-            <span class="eyebrow">Mulai Konsultasi</span>
-            <h2>Siap Mulai Menabung Bersama Kami?</h2>
-            <p style="margin:14px 0 24px;">Hubungi tim kami untuk mendapatkan informasi produk simpanan yang sesuai
-              dengan kebutuhan Anda.</p>
-            <div class="btn-row">
-              <a class="btn btn-primary" data-default-whatsapp href="#">Hubungi Kami Sekarang</a>
-              <a class="btn btn-outline" href="contact.html"
-                style="border-color:rgba(255,255,255,0.3);color:#fff;">Lihat Halaman Kontak</a>
+          <div class="seg-head">
+            <span class="kicker">Keunggulan Utama</span>
+            <h2 class="display-lead--s" style="font-size:var(--text-3xl);">Mengapa memilih Sinara Artha Naya?</h2>
+            <p class="lede" style="margin-top:var(--space-md);">Pendekatan kami menekankan rasa aman, kejelasan produk,
+              dan komunikasi yang nyaman untuk kebutuhan simpanan anggota.</p>
+          </div>
+          <div class="ring-2">
+            <div class="value-cell">
+              <span class="value-idx">01</span>
+              <h3>Simpanan aman</h3>
+              <p>Pengelolaan simpanan diarahkan agar nyaman, teratur, dan mudah dipahami anggota.</p>
             </div>
+            <div class="value-cell">
+              <span class="value-idx">02</span>
+              <h3>Pelayanan ramah</h3>
+              <p>Tim siap membantu menjawab pertanyaan produk dengan komunikasi yang jelas dan responsif.</p>
+            </div>
+            <div class="value-cell">
+              <span class="value-idx">03</span>
+              <h3>Produk fleksibel</h3>
+              <p>Pilihan produk tersedia untuk kebutuhan harian, target masa depan, hingga dana prioritas.</p>
+            </div>
+            <div class="value-cell">
+              <span class="value-idx">04</span>
+              <h3>Koperasi terpercaya</h3>
+              <p>Website dan struktur informasi dirancang resmi untuk membantu membangun kepercayaan pengunjung.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="seg">
+        <div class="container split">
+          <figure class="figure">
+            <img src="assets/images/ruang_kantor_kerja.webp" alt="Ruang kantor KOPERASI SINARA ARTHA NAYA"
+              loading="lazy" width="1200" height="900">
+            <figcaption>Kantor KOPERASI SINARA ARTHA NAYA — Denpasar, Bali</figcaption>
+          </figure>
+          <div>
+            <span class="kicker">Tentang Kami</span>
+            <h2 class="display-lead--s" style="font-size:var(--text-2xl);">Koperasi simpanan untuk masa depan finansial
+              yang terencana</h2>
+            <p class="lede" style="margin-top:var(--space-md);">SINARA ARTHA NAYA berkomitmen memberikan layanan
+              simpanan yang aman, mudah dipahami, dan berorientasi pada kesejahteraan anggota.</p>
+            <div class="btn-row" style="margin-top:var(--space-xl);">
+              <a class="btn btn-green" href="about.html">Pelajari Lebih Lanjut</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="seg seg--deep">
+        <div class="container closer">
+          <span class="kicker">Mulai Konsultasi</span>
+          <h2 class="display-lead--s" style="font-size:var(--text-3xl);">Siap mulai menabung bersama kami?</h2>
+          <p class="lede">Hubungi tim kami untuk mendapatkan informasi produk simpanan yang sesuai dengan kebutuhan Anda.
+          </p>
+          <div class="btn-row">
+            <a class="btn btn-gold" data-default-whatsapp href="#">Hubungi Kami Sekarang</a>
+            <a class="btn btn-ghost" href="contact.html">Lihat Halaman Kontak</a>
           </div>
         </div>
       </section>
@@ -293,43 +223,31 @@
 
     <footer class="site-footer">
       <div class="container">
+        <p class="footer-statement">KOPERASI SINARA ARTHA NAYA hadir sebagai mitra layanan simpanan yang aman, jelas,
+          dan mudah dihubungi.</p>
+        <nav class="footer-nav" aria-label="Navigasi footer">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="product.html">Product</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="terms.html">Terms</a>
+          <a href="privacy.html">Privacy</a>
+        </nav>
         <div class="footer-grid">
           <div>
             <div class="footer-brand">
-              <img class="brand-mark" src="assets/logo/logo.png" alt="Logo SINARA ARTHA NAYA">
-              <div>
-                <div class="brand-name" style="color:#facc15;">SINARA ARTHA NAYA</div>
-                <div class="brand-legal" style="color:rgba(255,255,255,0.72);">Company profile koperasi simpanan</div>
-              </div>
+              <img src="assets/logo/logo.png" alt="Logo SINARA ARTHA NAYA" width="44" height="44">
+              <span class="brand-name">SINARA ARTHA NAYA</span>
             </div>
-            <p>KOPERASI SINARA ARTHA NAYA hadir sebagai mitra layanan simpanan yang aman, jelas, dan mudah dihubungi.</p>
+            <p class="footer-legal">Koperasi simpanan untuk kebutuhan finansial terencana — simpanan reguler, berjangka,
+              dan deposito.</p>
           </div>
-          <div>
-            <h3 class="footer-title">Navigasi</h3>
-            <div class="footer-nav">
-              <a href="index.html">Home</a>
-              <a href="about.html">About</a>
-              <a href="product.html">Product</a>
-            </div>
-          </div>
-          <div>
-            <h3 class="footer-title">Informasi</h3>
-            <div class="footer-nav">
-              <a href="contact.html">Contact Us</a>
-              <a href="terms.html">Terms</a>
-              <a href="privacy.html">Privacy</a>
-            </div>
-          </div>
-          <div>
-            <h3 class="footer-title">Kontak</h3>
-            <div class="footer-contact">
-              <span>Jl. Komplek ruko Sesetan Agung No.16 S, Sesetan, Denpasar Selatan, Kota Denpasar, Bali 80223</span>
-              <!-- TODO: Konfirmasi ulang jam operasional resmi koperasi -->
-              <span>Senin–Jumat: 09.00–17.00 WITA &nbsp;|&nbsp; Sabtu: 09.00–13.00 WITA</span>
-              <a href="https://wa.me/628133308688">0813-3308-688</a>
-              <a href="mailto:cs@sinaraarthanaya.com">cs@sinaraarthanaya.com</a>
-            </div>
-          </div>
+          <address class="footer-contact">
+            <span>Jl. Komplek ruko Sesetan Agung No.16 S, Sesetan, Denpasar Selatan, Kota Denpasar, Bali 80223</span>
+            <span>Senin–Jumat: 09.00–17.00 WITA &nbsp;|&nbsp; Sabtu: 09.00–13.00 WITA</span>
+            <a href="https://wa.me/628133308688">0813-3308-688</a>
+            <a href="mailto:cs@sinaraarthanaya.com">cs@sinaraarthanaya.com</a>
+          </address>
         </div>
         <div class="footer-bottom">
           <span>&copy; 2026 KOPERASI SINARA ARTHA NAYA. All rights reserved.</span>
