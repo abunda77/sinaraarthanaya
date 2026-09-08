@@ -21,7 +21,7 @@ for (const page of pages) {
     ["header", /<header class="site-header"/i],
     ["footer", /<footer class="site-footer"/i],
     ["script include", /<script src="js\/main\.js"/i],
-    ["stylesheet include", /<link rel="stylesheet" href="css\/style\.css"/i],
+    ["stylesheet include", /<link rel="stylesheet" href="css\/style\.css(?:\?[^"]*)?"/i],
   ];
 
   for (const [label, pattern] of checks) {
